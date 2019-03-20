@@ -1,7 +1,9 @@
 
 body{padding:1rem}
-.todo{border:solid 1px #ccc; padding:1rem; margin-bottom: 1rem; display: flex}
-.todo h2{font-size: 1rem}
-.todo .text{flex: 1}
+.todo{border:solid 1px #cea477; background: #e8cbab; padding:1rem; margin-bottom: 1rem; display: flex}
+.todo.done{background: #cbe6e0; border:solid 1px #83bcaf}
+.todo h2{font-size: 1rem; margin:0}
+.todo span.edit{margin: 0 1rem;}
+.todo .text{flex: 1; margin:0 1rem}
 
 .EditableTitle{display: flex}

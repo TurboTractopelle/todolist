@@ -11,7 +11,6 @@ switchEditorHandler = () => {
     this.setState(prevState => ({editing: !prevState.editing}))
 
     if(this.state.editing && (this.state.initialValue !== this.state.currentTitle) ){
-        console.log("dispatch")
         this.props.todo_change_title(this.props.id, this.state.currentTitle)
     }
 }
@@ -24,7 +23,6 @@ inputHandler = (e)=>{
 
 
 render() {
-    console.log(this.state, this.props)
     return (
         <div className="EditableTitle">
             {this.state.editing ? 
